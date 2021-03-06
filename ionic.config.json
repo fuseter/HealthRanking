@@ -1,0 +1,7 @@
+{
+  "name": "HealthRanking",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
