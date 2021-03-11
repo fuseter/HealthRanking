@@ -1,0 +1,32 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-list lines="full" class="ion-no-margin">
+
+      <ion-toolbar>
+        <ion-title style="text-align: center; font-size: 20px;">เข้าสู่ระบบ</ion-title>
+      </ion-toolbar>
+
+      <ion-item>
+        <ion-label position="floating">อีเมล</ion-label>
+        <ion-input type="email" [(ngModel)]="this.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">รหัสผ่าน</ion-label>
+        <ion-input type="password" [(ngModel)]="this.password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <section>
+      <ion-button expand="block" (click)="login()">เข้าสู่ระบบ</ion-button>
+    </section>
+    <div style="display: flex; align-items: center; justify-content: center;margin-top: 10px;">
+      <p>ยังไม่มีบัญชีผู้ใช้ ? </p> &nbsp;
+      <p (click)="redirectToregister()" style="color: #7732FF;cursor: pointer;">ลงทะเบียน</p>
+    </div>
+  </ion-card>
+
+</ion-content>

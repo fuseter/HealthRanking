@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>BMI</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div style="display: flex; align-items: center;justify-content: center;flex-direction: row;margin-top: 120px;">
+    <img src="../../assets/images/OBJECTS.svg" alt="gg" style="width: 150px;position: absolute;">
+  </div>
+  <div style="margin-top: 60px;">
+  <ion-card class="result">
+    <ion-card-header>
+      <ion-card-subtitle style="color: #fff;font-size: 15px;">ค่า BMI ของคุณคือ</ion-card-subtitle>
+        <ion-card-title style="color: #fff;">{{this.bmi}}</ion-card-title>
+        <ion-card-title style="color: #fff;font-size: 13px;margin-top: 5px;font-weight: 300;">{{this.criterion}}</ion-card-title>
+
+    </ion-card-header>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+            <ion-label position="stacked">น้ำหนัก (kg)</ion-label>
+            <ion-input maxlength="3" type="number" [(ngModel)]="Weight"></ion-input>
+          </ion-item>
+      </ion-col>
+      <ion-col style="margin-right: 18px;">
+        <ion-item>
+          <ion-label position="stacked">ส่วนสูง (cm)</ion-label>
+          <ion-input [(ngModel)]="height" type="number" maxlength="3"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-button id="login-button" expand="block" (click)="bmiCalaulate()" style="margin: 24px 20px 0 20px;">คำนวณ</ion-button>
+</div>
+</ion-content>

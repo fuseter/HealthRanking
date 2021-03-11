@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>bmrscreen</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-card class="result">
+    <ion-card-header>
+      <ion-card-subtitle style="color: #fff;font-size: 15px;">BMR</ion-card-subtitle>
+      <ion-card-title style="color: #fff;">{{this.bmr}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card class="result">
+    <ion-card-header>
+      <ion-card-subtitle style="color: #fff;font-size: 15px;">TDEE</ion-card-subtitle>
+      <ion-card-title style="color: #fff;">{{this.tdee}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col style="margin-right: 18px;">
+        <ion-item>
+          <ion-label position="stacked">น้ำหนัก (kg)</ion-label>
+          <ion-input maxlength="3" type="number" [(ngModel)]="Weight"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col style="margin-right: 18px;">
+        <ion-item>
+          <ion-label position="stacked">ส่วนสูง (cm)</ion-label>
+          <ion-input [(ngModel)]="height" type="number" maxlength="3"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col style="margin-right: 18px;">
+        <ion-item>
+          <ion-label position="stacked">อายุ</ion-label>
+          <ion-input maxlength="3" type="number" [(ngModel)]="Age"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div style="margin-left: 10px; margin-right: 27px;">
+    <ion-item>
+      <ion-label>ชาย</ion-label>
+      <ion-checkbox slot="end" value="pepperoni" checked [(ngModel)]="Male"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>หญิง</ion-label>
+      <ion-checkbox slot="end" value="sausage" checked [(ngModel)]="female"></ion-checkbox>
+    </ion-item>
+  </div>
+
+
+  <ion-item style="margin-left: 10px; margin-right: 27px;">
+    <ion-label>ระดับ</ion-label>
+    <ion-select [(ngModel)]="level" interface="action-sheet">
+      <ion-select-option value="level_1">ไม่ออกกำลังกาย</ion-select-option>
+      <ion-select-option value="level_2">ออกกำลังกายเบาๆ</ion-select-option>
+      <ion-select-option value="level_3">ออกกำลังกายปานกลาง</ion-select-option>
+      <ion-select-option value="level_4">ออกกำลังกายหนัก</ion-select-option>
+      <ion-select-option value="level_5">ออกกำลังกายหนักมาก</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <div >
+    <ion-button id="login-button" expand="block" (click)="sendData()" style="margin: 24px 20px 40px 20px;">คำนวณอัตราการเผาผลาญ</ion-button>
+  </div>
+  <!-- <ion-card id="login-card">
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Male</ion-label>
+        <ion-checkbox slot="end" value="pepperoni" checked [(ngModel)]="Male"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>female</ion-label>
+        <ion-checkbox slot="end" value="sausage" checked [(ngModel)]="female"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Weight (kg) :</ion-label>
+        <ion-input type="text" maxlength="3" type="number" [(ngModel)]="Weight"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Height (cm) :</ion-label>
+        <ion-input [(ngModel)]="height" type="number" maxlength="3"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Age :</ion-label>
+        <ion-input type="text" maxlength="3" type="number" [(ngModel)]="Age"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>level</ion-label>
+        <ion-select interface="popover" [(ngModel)]="level">
+          <ion-select-option value="level_1">ไม่ออกกำลังกาย</ion-select-option>
+          <ion-select-option value="level_2">ออกกำลังกายเบาๆ</ion-select-option>
+          <ion-select-option value="level_3">ออกกำลังกายปานกลาง</ion-select-option>
+          <ion-select-option value="level_4">ออกกำลังกายหนัก</ion-select-option>
+          <ion-select-option value="level_5">ออกกำลังกายหนักมาก</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+
+    </ion-card-content>
+  </ion-card> -->
+
+
+</ion-content>

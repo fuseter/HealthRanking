@@ -1,0 +1,47 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-radio-group allow-empty-selection value="anchovies" [(ngModel)]="this.gender">
+      <ion-list-header>
+        <ion-label>เพศ</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>ชาย</ion-label>
+        <ion-radio slot="end" color="primary" value="ชาย"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>หญิง</ion-label>
+        <ion-radio slot="end" color="secondary" value="หญิง"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+    <ion-list lines="full" class="ion-no-margin">
+      <ion-list-header lines="full">
+        <ion-label>
+          ข้อมูลส่วนตัว
+        </ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>ชื่อเล่น</ion-label>
+        <ion-input type="text" [(ngModel)]="this.nickname"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>อายุ</ion-label>
+        <ion-input type="number" [(ngModel)]="this.age"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>ส่วนสูง</ion-label>
+        <ion-input type="number" [(ngModel)]="this.height"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>น้ำหนัก</ion-label>
+        <ion-input type="number" [(ngModel)]="this.weight"></ion-input>
+      </ion-item>
+    </ion-list>
+    <section>
+      <ion-button expand="block" (click)="register()">ลงทะเบียน</ion-button>
+    </section>
+  </ion-card>
+</ion-content>

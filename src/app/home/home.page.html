@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>หน้าแรก</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h4 style="opacity: 50%;">{{this.CurTime}},</h4>
+  <div style="display: flex; flex-direction: row;">
+    <h2>{{this.nickname}}</h2> <img width="25px" src="https://img.icons8.com/emoji/48/000000/waving-hand-emoji.png"
+      alt="emoji">
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card
+          style="background-image: linear-gradient(to top, rgb(162, 120, 244) 0%, rgb(119, 50, 255) 100%);  box-shadow: 0 8px 20px 0 rgba(119, 50, 255, 0.2), 0 6px 20px 0 rgba(119, 50, 255, 0.2);">
+          <ion-card-header>
+            <ion-card-subtitle>น้ำหนักของคุณ</ion-card-subtitle>
+            <ion-card-title>{{this.weight}}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card
+          style="background-image: linear-gradient(-225deg, #22E1FF 0%, rgb(29, 143, 225) 48%, #625EB1 100%);  box-shadow: 0 8px 20px 0 rgba(29, 143, 225, 0.2), 0 6px 20px 0 rgba(29, 143, 225, 0.2);">
+          <ion-card-header>
+            <ion-card-subtitle>ส่วนสูงของคุณ</ion-card-subtitle>
+            <ion-card-title>{{this.height}}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row2">
+      <ion-col>
+        <ion-card
+          style="background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, rgb(253, 134, 140) 60%, #fe9a8b 100%);box-shadow: 0 8px 20px 0 rgba(253, 134, 140, 0.2), 0 6px 20px 0 rgba(253, 134, 140, 0.2);">
+          <ion-card-header>
+            <ion-card-subtitle>BMI</ion-card-subtitle>
+            <ion-card-title>{{this.bmi}}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card
+          style="background-image: linear-gradient(to top, rgb(0, 122, 223) 0%, #00ecbc 100%); box-shadow: 0 8px 20px 0 rgba(0, 122, 223, 0.2), 0 6px 20px 0 rgba(0, 122, 223, 0.2); ">
+          <ion-card-header>
+            <ion-card-subtitle>BMR</ion-card-subtitle>
+            <ion-card-title>{{this.bmr}}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="tdee">
+      <ion-col>
+        <ion-card
+          style="background-image: linear-gradient(to top, rgb(247, 112, 98) 0%, #fe5196 100%); box-shadow: 0 8px 20px 0 rgba(247, 112, 98, 0.2), 0 6px 20px 0 rgba(247, 112, 98, 0.2);">
+          <ion-card-header class="text">
+            <ion-card-subtitle>TDEE</ion-card-subtitle>
+            <ion-card-title>{{this.tdee}}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div style="display: flex;justify-content: center;align-items: center;margin-top: -34px;">
+    <img src="../../assets/images/Artboard.svg" alt="Artboard" style="width: 260px;">
+  </div>
+
+
+</ion-content>

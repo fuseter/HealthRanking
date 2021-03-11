@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>อันดับ</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of this.rankGold">
+      <ion-avatar slot="start">
+        <img src="../../assets/images/gold-medal.svg">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{item.nickname}}</h2>
+        <h3 style="color: #fbc531;">Gold</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngFor="let item of this.ranksilver">
+      <ion-avatar slot="start">
+        <img src="../../assets/images/medalkk.svg">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{item.nickname}}</h2>
+        <h3 style="color: #636e72;">Silver</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngFor="let item of this.rankcopper">
+      <ion-avatar slot="start">
+        <img src="../../assets/images/medal.svg">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{item.nickname}}</h2>
+        <h3 style="color: #636e72;">copper</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+
+
+
+</ion-content>

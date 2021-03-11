@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>สุขภาพ</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div style="display: flex;align-items: center;justify-content: center;margin-top: 50px;margin-bottom: 50px;">
+
+    <img src="../../assets/images/Group.svg" alt="hh" style="width: 60%;">
+  </div>
+  <ion-card (click)="bmicalculate()" class="result">
+    <div style="display: flex; flex-direction: row;">
+      <div style="width: 10px; height: 100px; background-color: #7732FF ;"></div>
+      <ion-card-header>
+        <ion-card-title>คำนวณค่า BMI</ion-card-title>
+        <ion-card-subtitle>การหาค่าดัชนีมวลกาย</ion-card-subtitle>
+      </ion-card-header>
+    </div>
+  </ion-card>
+  <ion-card (click)="bmrcalculate()" class="result">
+    <div style="display: flex; flex-direction: row;">
+      <div style="width: 10px; height: 100px; background-color: #7732FF ;"></div>
+      <ion-card-header>
+        <ion-card-title>คำนวณแคลอรี่ต่อวัน</ion-card-title>
+        <ion-card-subtitle>ความต้องการพลังงานต่อวัน</ion-card-subtitle>
+      </ion-card-header>
+    </div>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+
+h4 {
+  margin: 30px 0 5px 27px;
+}
+
+h2 {
+  margin: 0 10px 0 27px;
+}
+
+
+ion-card{
+  width: 100%;
+}
+
+ion-grid{
+  margin-right: 32px;
+}
+
+.row2{
+  margin-top: -45px;
+}
+
+.tdee{
+  margin-top: -45px;
+}
+
+.text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ion-card-title{
+  font-size: 22px;
+  color: #fff;
+}
+
+ion-card-subtitle{
+  color:#fff;
+  font-weight: 500;
+}
+
+
+
+
+
